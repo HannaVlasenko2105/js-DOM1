@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h2>Калькулятор</h2>
+        
+        <div class="numbers">
+            <input type="text" id="number1" placeholder="Перше число">
+            <input type="text" id="number2" placeholder="Друге число">
+        </div>
+
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">÷</button>
+        </div>
+
+        <div class="numbers">
+            <input type="text" id="result" placeholder="Результат" readonly>
+        </div>
+
+        <div class="clear">
+            <button id="clear">Очистити</button>
+        </div>
+
+        <div class="error" id="error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
